@@ -1,0 +1,20 @@
+{
+  "servers": {
+    "docs": {
+      "type": "stdio",
+      "command": "E:\\MCP_Python\\.venv\\Scripts\\python.exe",
+      "args": ["E:\\MCP_Python\\mcp_server.py"],
+      "env": {
+        "SERVER_API": "${input:server-api-key}"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "server-api-key",
+      "description": "Serper API key",
+      "password": true
+    }
+  ]
+}
